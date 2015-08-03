@@ -1,0 +1,250 @@
+body {
+    font-family: 'Raleway', Helvetica, Arial;
+    font-size: 87.5%;
+    font-weight: 400;
+    letter-spacing: 1px;
+    background: url('../img/tree_bark.png');
+}
+
+hr {
+    border: solid #bdc3c7;
+    border-width: 1px 0 0;
+    clear: both;
+    margin: 1.25rem 0 1.1875rem;
+    height: 0;
+}
+
+/***********************************
+    Navigation
+***********************************/
+
+.button {
+    font-weight: 600;
+}
+
+.top {
+    margin-top: 15px;
+}
+
+.button-group {
+    margin-top: 75px;
+}
+
+#logo {
+    margin: 2% 0;
+   width: 30%;
+}
+
+li a {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+/* Navigation buttons */
+button, .button {
+    font-family: 'Raleway', Helvetica, Arial;
+    background-color: transparent;
+}
+
+.button-group > li > button, .button-group > li .button {
+    border-left: none;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+    background-color: transparent;
+    text-decoration: underline;
+    color: #747C91;
+}
+
+ /*Button text color*/
+button, .button {
+    color: black;
+}
+
+ /* Button text color hover */
+button:hover, button:focus, .button:hover, .button:focus {
+    color: black;
+
+}
+
+/***********************************
+    Slideshow
+***********************************/
+
+.slick-prev:before, .slick-next:before {
+    color: #7f8c8d;
+}
+
+/***********************************
+    Table content
+***********************************/
+
+table tr:nth-of-type(even) {
+    background-color: transparent !important;
+}
+
+table {
+    border: none;
+    /*background-color: transparent;*/
+    padding: 0;
+    background-color: transparent;
+    border-collapse: collapse;
+
+}
+
+table tr td {
+    text-align: center;
+}
+
+/**************************************************
+   Contact
+**************************************************/
+
+.contacts {
+    text-align: center;
+}
+
+.contact {
+    padding-top: 60px;
+}
+
+.contact h6 {
+    text-transform: uppercase;
+}
+
+i.fi-marker {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+i.fi-mail {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+i.fi-telephone {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact h6{
+    margin: 0 0 30px 0;
+}
+
+/**************************************************
+   Sidebar
+**************************************************/
+
+.panel p{
+    font-size: 14px;
+    text-align: center;
+}
+
+.about > p {
+    text-align: left;
+}
+
+h5 {
+    text-align: center;
+}
+
+#date {
+    text-align: center;
+}
+
+#loc_dis {
+    display: none;
+}
+
+
+/**************************************************
+   Footer
+**************************************************/
+
+.fi-social-facebook ,.fi-social-instagram {
+    font-size: 28px;
+}
+
+footer {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/**************************************************
+   Mobile CSS
+**************************************************/
+table tr th, table tr td {
+    padding: 0.5625rem 2.525rem;
+}
+
+@media only screen and (max-width: 500px) {
+    table tr th, table tr td {
+        padding: 0.5625rem 0;
+    }
+}
+
+
+@media only screen and (max-width: 40em) {
+    img#logo {
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    td p {
+        overflow: inherit;
+    }
+
+    #table td img {
+        margin-right: 10px;
+    }
+
+    ul li, li a {
+        width: 100%;
+    }
+
+    .panel p {
+        text-align: center;
+        font-size: larger;
+    }
+
+    .about > p {
+        text-align: left;
+    }
+    h4 {
+        text-align: center;
+    }
+
+    h6 {
+        text-align: center;
+    }
+
+    .button-group > li > button, .button-group > li .button {
+        border: 1px solid black;
+        /*text-decoration: none;*/
+    }
+
+    button:hover, button:focus, .button:hover, .button:focus {
+        text-decoration: none;
+    }
+
+    .button-group > li:first-child button, .button-group > li:first-child .button {
+        border-right: 1px solid;
+        border-left: 1px solid ;
+    }
+
+    #loc_dis {
+        display: block;
+    }
+
+    #home {
+        display: none;
+    }
+
+    #hide {
+        display: none;
+    }
+
+}
