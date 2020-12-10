@@ -119,6 +119,13 @@ nav li a {
     text-transform: uppercase
 }
 
+nav li a sup {
+    color: red;
+    font-size: 10px;
+    padding-left: 5px;
+    text-transform: uppercase;
+}
+
 nav li a:hover, nav li a.active {
     background-color: #ffffff;
     color: #19262c;
