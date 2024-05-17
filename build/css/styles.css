@@ -359,7 +359,7 @@ nav li div:hover {
     max-width: 1170px;
     margin: 0 auto;
     padding: 10px 15px;
-    text-align: center;
+    text-align: center
 }
 
 @media (min-width: 48em) {
@@ -706,7 +706,7 @@ nav li div:hover {
 .contact .store-hours {
     border: 10px solid rgba(92, 74, 87, 0.8);
     margin-bottom: 20px;
-    padding: 43px 20px;
+    padding: 43px 20px 8px;
     text-align: center
 }
 
