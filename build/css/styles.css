@@ -71,7 +71,8 @@ body {
 
 nav {
     display: none;
-    overflow: hidden
+    /*position: relative;*/
+    /*overflow: hidden*/
 }
 
 nav.open {
@@ -88,7 +89,7 @@ nav.open {
 nav ul {
     list-style-type: none;
     margin: 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
     padding: 0
 }
 
@@ -110,9 +111,11 @@ nav li:hover:nth-child(2), nav li:hover:last-child {
     border-top: 1px solid #5c4a57
 }
 
-nav li a {
+nav li a,
+nav li div {
     display: block;
     color: #fff;
+    font-weight: bold;
     padding: 14px 16px;
     text-align: center;
     text-decoration: none;
@@ -126,11 +129,88 @@ nav li a sup {
     text-transform: uppercase;
 }
 
-nav li a:hover, nav li a.active {
-    background-color: #ffffff;
+nav li a:hover, nav li a.active,
+nav li div:hover {
+    background-color: #fff;;
     color: #19262c;
     font-weight: bold
 }
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #fff;;
+    color: #19262c;
+    font-weight: bold;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown {
+    width: 100%;
+}
+
+
+@media (min-width: 48em) {
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+    }
+
+    .dropdown {
+        width: auto;
+    }
+}
+
+.dropdown-content li {
+    width: 100%;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #5c4a57;
+    color: #fff;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    width: 100%;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #fff;
+    color: #19262c;
+}
+
 
 .logo {
     display: none
@@ -150,15 +230,15 @@ nav li a:hover, nav li a.active {
 }
 
 @media (max-width: 48em) {
-    nav li:last-child a {
-        background: #fff;
-        border-left: 1px solid #fff;
-        border-right: 1px solid #fff;
-        color: #19262c;
-        font-weight: bold;
-        margin: 0 auto;
-        width: 50%;
-    }
+    /*nav li:last-child a {*/
+    /*    background: #fff;*/
+    /*    border-left: 1px solid #fff;*/
+    /*    border-right: 1px solid #fff;*/
+    /*    color: #19262c;*/
+    /*    font-weight: bold;*/
+    /*    margin: 0 auto;*/
+    /*    width: 50%;*/
+    /*}*/
 }
 
 @media (min-width: 48em) {
@@ -175,23 +255,23 @@ nav li a:hover, nav li a.active {
         display: inline-block;
     }
 
-    nav li:last-child {
-        background: #fff;
-    }
+    /*nav li:last-child {*/
+    /*    background: #fff;*/
+    /*}*/
 
-    nav li:last-child a {
-        color: #19262c;
-        font-weight: bold;
-    }
+    /*nav li:last-child a {*/
+    /*    color: #19262c;*/
+    /*    font-weight: bold;*/
+    /*}*/
 
-    nav li:last-child :hover {
-        background: #5c4a57;
-    }
+    /*nav li:last-child :hover {*/
+    /*    background: #5c4a57;*/
+    /*}*/
 
-    nav li:last-child :hover {
-        border: 1px solid #fff;
-        color: #fff;
-    }
+    /*nav li:last-child :hover {*/
+    /*    border: 1px solid #fff;*/
+    /*    color: #fff;*/
+    /*}*/
 
     .logo {
         float: right;
@@ -273,7 +353,7 @@ nav li a:hover, nav li a.active {
     }
 }
 
-.menu h2 {
+.menu h1 {
     font-size: 32px;
     font-weight: 600;
     max-width: 1170px;
@@ -283,7 +363,7 @@ nav li a:hover, nav li a.active {
 }
 
 @media (min-width: 48em) {
-    .menu h2 {
+    .menu h1 {
         font-size: 65px;
         padding: 25px 15px
     }
@@ -357,7 +437,7 @@ nav li a:hover, nav li a.active {
 .menu a {
     color: #ffffff;
     font-size: 14px;
-    font-weight: 200;
+    font-weight: bold;
     padding: 15px 0;
     text-decoration: none;
     text-transform: uppercase
@@ -626,7 +706,7 @@ nav li a:hover, nav li a.active {
 .contact .store-hours {
     border: 10px solid rgba(92, 74, 87, 0.8);
     margin-bottom: 20px;
-    padding: 25px 20px;
+    padding: 43px 20px;
     text-align: center
 }
 
